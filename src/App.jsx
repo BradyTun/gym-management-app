@@ -3,11 +3,11 @@ import { Home } from "./pages/Home";
 import Navbar from "./pages/Nav";
 import Pos from "./pages/pos/Pos";
 import SalesReport from "./pages/sales/Sales";
-import Members from "./pages/Members/MemberList";
-import MemberDetails from "./pages/Members/MemberView";
-import MemberEdit from "./pages/Members/MemberEdit";
-import Packages from "./pages/Packages/PackageList";
-import Trainers from "./pages/Trainers/TrainerList";
+import Members from "./pages/members/MemberList";
+import MemberDetails from "./pages/members/MemberView";
+import MemberEdit from "./pages/members/MemberEdit";
+import Packages from "./pages/packages/PackageList";
+import Trainers from "./pages/trainers/TrainerList";
 import Products from "./pages/products/ProductList";
 import Login from "./pages/auth/Login";
 
