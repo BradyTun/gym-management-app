@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { Home } from "./pages/Home";
 import Navbar from "./pages/Nav";
 import Pos from "./pages/pos/Pos";
@@ -19,19 +19,19 @@ export default function App() {
         <Navbar />
         <main className="p-6">
           <Routes>
-            <Route path="/" element={<Home />} />
+            <Route path="/" element={<Navigate to="/login" />} />
             <Route path="/login" element={<Login />} />
 
-            <Route path="/pos" element={<Pos />} />
-            <Route path="/products" element={<Products />} />
-            <Route path="/sales" element={<SalesReport />} />
-            <Route path="/members" element={<Members />} />
-            <Route path="/members/:id" element={<MemberDetails />} />
-            <Route path="/members/:id/edit" element={<MemberEdit />} />
-            <Route path="/packages" element={<Packages />} />
-            <Route path="/instructors" element={<Trainers />} />
+            <Route path="/pos" element={<Navigate to="/login" />} />
+            <Route path="/products" element={<Navigate to="/login" />} />
+            <Route path="/sales" element={<Navigate to="/login" />} />
+            <Route path="/members" element={<Navigate to="/login" />} />
+            <Route path="/members/:id" element={<Navigate to="/login" />} />
+            <Route path="/members/:id/edit" element={<Navigate to="/login" />} />
+            <Route path="/packages" element={<Navigate to="/login" />} />
+            <Route path="/instructors" element={<Navigate to="/login" />} />
 
-            <Route path="*" element={<h2>Page Not Found</h2>} />
+            <Route path="*" element={<Navigate to="/login" />} />
           </Routes>
         </main>
       </div>
